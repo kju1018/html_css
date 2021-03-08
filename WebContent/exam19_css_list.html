@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta charset="UTF-8">
-		<title>Insert title here</title>
-		<style type="text/css">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	.menu{ /*= menu li*/
+		list-style-type: none;
+		padding: 10px;
+		border-bottom: 1px solid black;
+		height: 20px;
+	}
+	.menuitem{
+		float: left; /*li는 블록요소라서 옆으로 붙이려면 이게 필요함*/
+		margin-right: 20px;
+		cursor: pointer; /*마우스가 손가락모양으로 바뀜*/
+	}
+	.menuitem:hover{
+		color: #15aabf;
+	}	
+	
+	.mi{
+		margin-right: 20px;
 		
-			table {
-  				width: 100%;
-  				
-			}
-			
-			table, th, td {
- 				border: 1px solid black;
- 				border-collapse: collapse;
-			}
-			
-			th {
-				background-color: orange;
-			}
-		</style>
-	</head>
+	}
+	a {
+	text-decoration: none; /*텍스트의 장식을 없애겠다*/
+}
+</style>
+</head>
 <body>
-	<table>
-		<thead>
-			<tr>
-				<th>bno</th>
-				<th>title</th>
-				<th>content</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>오늘은 따뜻해?</td>
-				<td>온도가 11도까지 올라간다네요.</td>
-			</tr>
 
-			<tr>
-				<td>2</td>
-				<td>목요일입니다.</td>
-				<td>내일 금요일은 화면 설계 발표합니다.</td>
-			</tr>
+		<ul class="menu">
+			<li class="menuitem">Menu1</li>
+			<li class="menuitem">Menu2</li>
+			<li class="menuitem">Menu3</li>
+			<li class="menuitem">Menu4</li>
+			<li class="menuitem">Menu5</li>
+			
+		</ul>
 
-			<tr>
-				<td colspan="3">버튼1, 버튼2</td>
-			</tr>
-		</tbody>
-	</table>
+
+		<div class="menu">
+			<a class="mi" href="#">Menu1</a>
+			<a class="mi" href="#">Menu2</a>
+			<a class="mi" href="#">Menu3</a>
+			<a class="mi" href="#">Menu4</a>
+			<a class="mi" href="#">Menu5</a>
+			
+		</div>
 </body>
 </html>
